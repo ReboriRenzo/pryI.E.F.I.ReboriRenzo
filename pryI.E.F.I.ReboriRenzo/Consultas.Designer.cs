@@ -1,6 +1,6 @@
 ﻿namespace pryI.E.F.I.ReboriRenzo
 {
-    partial class Consultas
+    partial class frmConsultas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Consultas
+            // frmConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 306);
-            this.Name = "Consultas";
+            this.Name = "frmConsultas";
             this.Text = "Consultas";
             this.ResumeLayout(false);
 

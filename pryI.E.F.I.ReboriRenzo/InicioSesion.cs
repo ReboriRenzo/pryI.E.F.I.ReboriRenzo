@@ -29,7 +29,6 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 frmBienvenido ventanaPrincipal = new frmBienvenido();
                 ventanaPrincipal.ShowDialog();
-
                 this.Hide();
             }
             else

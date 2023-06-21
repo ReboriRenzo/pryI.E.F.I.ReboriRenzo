@@ -107,6 +107,7 @@
             this.Controls.Add(this.lblIniciarSesion);
             this.Name = "frmInicioSesion";
             this.Text = "Inicio Sesion";
+            this.Load += new System.EventHandler(this.frmInicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

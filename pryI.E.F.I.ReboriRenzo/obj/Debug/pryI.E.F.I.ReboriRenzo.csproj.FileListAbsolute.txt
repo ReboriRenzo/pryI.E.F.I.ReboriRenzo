@@ -10,5 +10,5 @@ C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.exe
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.pdb
-C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.Consultas.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmRegistro.resources
+C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmConsultas.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryI.E.F.I.ReboriRenzo
 {
-    public partial class Consultas : Form
+    public partial class frmConsultas : Form
     {
-        public Consultas()
+        public frmConsultas()
         {
             InitializeComponent();
         }

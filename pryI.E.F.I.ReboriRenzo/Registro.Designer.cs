@@ -87,6 +87,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(92, 17);
             this.textBox1.Name = "textBox1";
@@ -95,6 +96,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(80, 91);
             this.textBox2.Name = "textBox2";
@@ -103,6 +105,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(125, 55);
             this.textBox3.Name = "textBox3";
@@ -119,23 +122,25 @@
             // 
             // cmdCancelar
             // 
+            this.cmdCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cmdCancelar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancelar.Location = new System.Drawing.Point(16, 192);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(97, 36);
             this.cmdCancelar.TabIndex = 8;
             this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.UseVisualStyleBackColor = false;
             // 
             // cmdRegistrar
             // 
+            this.cmdRegistrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistrar.Location = new System.Drawing.Point(220, 192);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 36);
             this.cmdRegistrar.TabIndex = 9;
             this.cmdRegistrar.Text = "Registrar";
-            this.cmdRegistrar.UseVisualStyleBackColor = true;
+            this.cmdRegistrar.UseVisualStyleBackColor = false;
             // 
             // mrcRegistro
             // 
@@ -147,6 +152,7 @@
             this.mrcRegistro.Controls.Add(this.textBox3);
             this.mrcRegistro.Controls.Add(this.textBox1);
             this.mrcRegistro.Controls.Add(this.textBox2);
+            this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcRegistro.Location = new System.Drawing.Point(12, 12);
             this.mrcRegistro.Name = "mrcRegistro";
             this.mrcRegistro.Size = new System.Drawing.Size(308, 177);
@@ -156,13 +162,15 @@
             // 
             // cmdConultar
             // 
+            this.cmdConultar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cmdConultar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdConultar.Location = new System.Drawing.Point(119, 192);
             this.cmdConultar.Name = "cmdConultar";
             this.cmdConultar.Size = new System.Drawing.Size(95, 36);
             this.cmdConultar.TabIndex = 11;
             this.cmdConultar.Text = "Consultar";
-            this.cmdConultar.UseVisualStyleBackColor = true;
+            this.cmdConultar.UseVisualStyleBackColor = false;
+            this.cmdConultar.Click += new System.EventHandler(this.cmdConultar_Click);
             // 
             // frmRegistro
             // 
@@ -175,6 +183,7 @@
             this.Controls.Add(this.cmdCancelar);
             this.Name = "frmRegistro";
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.mrcRegistro.ResumeLayout(false);
             this.mrcRegistro.PerformLayout();
             this.ResumeLayout(false);

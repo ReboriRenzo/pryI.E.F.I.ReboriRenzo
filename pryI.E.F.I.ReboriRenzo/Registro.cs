@@ -26,5 +26,17 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
+
+        private void frmRegistro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdConultar_Click(object sender, EventArgs e)
+        {
+            frmConsultas frmConsultas = new frmConsultas();
+            frmConsultas.ShowDialog();
+            this.Hide();
+        }
     }
 }
