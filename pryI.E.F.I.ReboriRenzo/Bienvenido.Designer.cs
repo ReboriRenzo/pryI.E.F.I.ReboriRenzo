@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdRegistrarProductos = new System.Windows.Forms.Button();
             this.lblBienvenidos = new System.Windows.Forms.Label();
+            this.cmdCargarProductos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // cmdRegistrarProductos
             // 
-            this.button1.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(104, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Registrate AQUÍ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdRegistrarProductos.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegistrarProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdRegistrarProductos.Location = new System.Drawing.Point(27, 53);
+            this.cmdRegistrarProductos.Name = "cmdRegistrarProductos";
+            this.cmdRegistrarProductos.Size = new System.Drawing.Size(137, 45);
+            this.cmdRegistrarProductos.TabIndex = 0;
+            this.cmdRegistrarProductos.Text = "Registrar Productos";
+            this.cmdRegistrarProductos.UseVisualStyleBackColor = true;
+            this.cmdRegistrarProductos.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblBienvenidos
             // 
@@ -56,13 +57,25 @@
             this.lblBienvenidos.TabIndex = 2;
             this.lblBienvenidos.Text = "CARGAS DE PRODUCTOS";
             // 
+            // cmdCargarProductos
+            // 
+            this.cmdCargarProductos.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargarProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdCargarProductos.Location = new System.Drawing.Point(170, 53);
+            this.cmdCargarProductos.Name = "cmdCargarProductos";
+            this.cmdCargarProductos.Size = new System.Drawing.Size(137, 45);
+            this.cmdCargarProductos.TabIndex = 3;
+            this.cmdCargarProductos.Text = "Cargar Productos";
+            this.cmdCargarProductos.UseVisualStyleBackColor = true;
+            // 
             // frmBienvenido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 110);
+            this.Controls.Add(this.cmdCargarProductos);
             this.Controls.Add(this.lblBienvenidos);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdRegistrarProductos);
             this.Name = "frmBienvenido";
             this.Text = "Bienvenido";
             this.ResumeLayout(false);
@@ -72,7 +85,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdRegistrarProductos;
         private System.Windows.Forms.Label lblBienvenidos;
+        private System.Windows.Forms.Button cmdCargarProductos;
     }
 }

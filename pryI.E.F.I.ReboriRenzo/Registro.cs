@@ -39,5 +39,37 @@ namespace pryI.E.F.I.ReboriRenzo
             frmConsultas.ShowDialog();
             this.Hide();
         }
+
+        private void cmdRegistrar_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text != "")
+            {
+                if (txtNombre.Text != "")
+                {
+                    if (nudCantidad.Value >= 1)
+                    {
+                        if (dtpFecha.Value >= DateTime.Today)
+                        {
+                            MessageBox.Show("Productos Cargados correctamente");
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior");
+                        }
+                    }
+
+                    else
+                        MessageBox.Show("Cantidad invalida a lo esperado", "Determine un valor cierto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                    MessageBox.Show("Nombre del producto inexistente", "NOMBRE INCORRECTO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+
+            }
+            else
+                MessageBox.Show("ID del producto inexistente", "ERROR EN EL ID", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            
+            
+        }
     }
 }
