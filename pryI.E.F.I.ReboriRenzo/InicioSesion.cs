@@ -46,5 +46,10 @@ namespace pryI.E.F.I.ReboriRenzo
                 }
             }
         }
+
+        private void frmInicioSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

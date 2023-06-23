@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace pryI.E.F.I.ReboriRenzo
 {
     public partial class frmRegistro : Form
+
     {
         public frmRegistro()
         {
