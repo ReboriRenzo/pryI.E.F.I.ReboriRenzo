@@ -23,5 +23,10 @@ namespace pryI.E.F.I.ReboriRenzo
             frmRegistro.ShowDialog();
             this.Close();
         }
+
+        private void cmdCargarProductos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

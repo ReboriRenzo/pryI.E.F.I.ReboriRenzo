@@ -37,7 +37,7 @@
             // 
             this.cmdRegistrarProductos.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistrarProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmdRegistrarProductos.Location = new System.Drawing.Point(27, 53);
+            this.cmdRegistrarProductos.Location = new System.Drawing.Point(22, 53);
             this.cmdRegistrarProductos.Name = "cmdRegistrarProductos";
             this.cmdRegistrarProductos.Size = new System.Drawing.Size(137, 45);
             this.cmdRegistrarProductos.TabIndex = 0;
@@ -61,18 +61,19 @@
             // 
             this.cmdCargarProductos.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCargarProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmdCargarProductos.Location = new System.Drawing.Point(170, 53);
+            this.cmdCargarProductos.Location = new System.Drawing.Point(175, 53);
             this.cmdCargarProductos.Name = "cmdCargarProductos";
             this.cmdCargarProductos.Size = new System.Drawing.Size(137, 45);
             this.cmdCargarProductos.TabIndex = 3;
             this.cmdCargarProductos.Text = "Cargar Productos";
             this.cmdCargarProductos.UseVisualStyleBackColor = true;
+            this.cmdCargarProductos.Click += new System.EventHandler(this.cmdCargarProductos_Click);
             // 
             // frmBienvenido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 110);
+            this.ClientSize = new System.Drawing.Size(342, 117);
             this.Controls.Add(this.cmdCargarProductos);
             this.Controls.Add(this.lblBienvenidos);
             this.Controls.Add(this.cmdRegistrarProductos);

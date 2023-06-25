@@ -13,6 +13,9 @@ namespace pryI.E.F.I.ReboriRenzo
     public partial class frmRegistro : Form
 
     {
+        frmConsultas ventanaConsultas = new frmConsultas();
+        readonly int indiceRegistro = 0;
+        int indiceFilaRegistro;
         public frmRegistro()
         {
             InitializeComponent();
@@ -40,7 +43,25 @@ namespace pryI.E.F.I.ReboriRenzo
             this.Hide();
         }
 
-        private void cmdRegistrar_Click(object sender, EventArgs e)
+        
+
+        private void cmdMostrar_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void CmdMostrar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+           this.Close();
+        }
+
+        private void cmdRegistrar_Click_1(object sender, EventArgs e)
         {
             if (txtID.Text != "")
             {
@@ -50,12 +71,27 @@ namespace pryI.E.F.I.ReboriRenzo
                     {
                         if (dtpFecha.Value >= DateTime.Today)
                         {
-                            MessageBox.Show("Productos Cargados correctamente");
+
+                            MessageBox.Show("Productos Cargados correctamente", "Producto Cargado!!", MessageBoxButtons.OK, MessageBoxIcon.None);
+
+
+                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 0] = txtID.Text;
+                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 1] = txtNombre.Text;
+                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 2] = nudCantidad.Value.ToString();
+                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 3] = dtpFecha.Value.ToString();
+
+                            indiceFilaRegistro++;
+
+                            if (indiceFilaRegistro == ventanaConsultas.matrizRegistro.GetLength(0))
+                            {
+                                cmdRegistrar.Enabled = false;
+                            }
+
 
                         }
                         else
                         {
-                            MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior");
+                            MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
 
@@ -68,8 +104,7 @@ namespace pryI.E.F.I.ReboriRenzo
             }
             else
                 MessageBox.Show("ID del producto inexistente", "ERROR EN EL ID", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-            
-            
+
         }
     }
 }
