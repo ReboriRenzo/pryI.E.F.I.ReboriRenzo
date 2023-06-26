@@ -60,7 +60,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.mrcRegistro.Controls.Add(this.lblFechaRegistro);
             this.mrcRegistro.Controls.Add(this.txtID);
             this.mrcRegistro.Controls.Add(this.txtNombre);
-            this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcRegistro.Location = new System.Drawing.Point(12, 91);
             this.mrcRegistro.Name = "mrcRegistro";
             this.mrcRegistro.Size = new System.Drawing.Size(328, 281);
@@ -71,7 +71,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdMostrar
             // 
             this.cmdMostrar.BackColor = System.Drawing.Color.Tan;
-            this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdMostrar.Location = new System.Drawing.Point(111, 226);
             this.cmdMostrar.Name = "cmdMostrar";
             this.cmdMostrar.Size = new System.Drawing.Size(95, 36);
@@ -83,7 +83,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdRegistrar
             // 
             this.cmdRegistrar.BackColor = System.Drawing.Color.Tan;
-            this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistrar.Location = new System.Drawing.Point(212, 226);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 36);
@@ -94,6 +94,8 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // nudCantidad
             // 
+            this.nudCantidad.BackColor = System.Drawing.Color.DarkGray;
+            this.nudCantidad.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudCantidad.Location = new System.Drawing.Point(89, 126);
             this.nudCantidad.Name = "nudCantidad";
             this.nudCantidad.Size = new System.Drawing.Size(93, 28);
@@ -102,7 +104,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdCancelar
             // 
             this.cmdCancelar.BackColor = System.Drawing.Color.Tan;
-            this.cmdCancelar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancelar.Location = new System.Drawing.Point(10, 226);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(95, 36);
@@ -113,7 +115,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 21);
@@ -131,7 +133,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(6, 35);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(117, 21);
@@ -141,7 +143,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(6, 77);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(68, 21);
@@ -151,15 +153,16 @@ namespace pryI.E.F.I.ReboriRenzo
             // lblFechaRegistro
             // 
             this.lblFechaRegistro.AutoSize = true;
-            this.lblFechaRegistro.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaRegistro.Location = new System.Drawing.Point(85, 168);
+            this.lblFechaRegistro.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaRegistro.Location = new System.Drawing.Point(68, 164);
             this.lblFechaRegistro.Name = "lblFechaRegistro";
-            this.lblFechaRegistro.Size = new System.Drawing.Size(132, 21);
+            this.lblFechaRegistro.Size = new System.Drawing.Size(163, 25);
             this.lblFechaRegistro.TabIndex = 3;
             this.lblFechaRegistro.Text = "Fecha de Registro";
             // 
             // txtID
             // 
+            this.txtID.BackColor = System.Drawing.Color.DarkGray;
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(129, 28);
@@ -169,6 +172,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // txtNombre
             // 
+            this.txtNombre.BackColor = System.Drawing.Color.DarkGray;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(89, 77);
