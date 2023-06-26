@@ -26,7 +26,9 @@ namespace pryI.E.F.I.ReboriRenzo
 
         private void cmdCargarProductos_Click(object sender, EventArgs e)
         {
-
+            frmCargaDeVentas frmCargaDeVentas = new frmCargaDeVentas();
+            frmCargaDeVentas.ShowDialog();
+            this.Close();
         }
     }
 }

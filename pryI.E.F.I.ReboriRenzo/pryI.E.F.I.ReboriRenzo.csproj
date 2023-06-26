@@ -52,6 +52,12 @@
     <Compile Include="Bienvenido.Designer.cs">
       <DependentUpon>Bienvenido.cs</DependentUpon>
     </Compile>
+    <Compile Include="CargaDeVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargaDeVentas.Designer.cs">
+      <DependentUpon>CargaDeVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="Bienvenido.resx">
       <DependentUpon>Bienvenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargaDeVentas.resx">
+      <DependentUpon>CargaDeVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>

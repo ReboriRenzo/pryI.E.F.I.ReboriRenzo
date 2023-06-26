@@ -51,5 +51,10 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

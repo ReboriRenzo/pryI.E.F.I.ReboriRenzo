@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace pryI.E.F.I.ReboriRenzo
+﻿namespace pryI.E.F.I.ReboriRenzo
 {
-    partial class frmRegistro
+    partial class frmCargaDeVentas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +28,8 @@ namespace pryI.E.F.I.ReboriRenzo
         /// </summary>
         private void InitializeComponent()
         {
-            this.mrcRegistro = new System.Windows.Forms.GroupBox();
-            this.cmdMostrar = new System.Windows.Forms.Button();
+            this.mrcVentas = new System.Windows.Forms.GroupBox();
+            this.cmdConsilta = new System.Windows.Forms.Button();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.cmdCancelar = new System.Windows.Forms.Button();
@@ -39,46 +37,45 @@ namespace pryI.E.F.I.ReboriRenzo
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.lblID = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblFechaRegistro = new System.Windows.Forms.Label();
+            this.lblFechaVenta = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.mrcRegistro.SuspendLayout();
+            this.mrcVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
             // 
-            // mrcRegistro
+            // mrcVentas
             // 
-            this.mrcRegistro.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.mrcRegistro.Controls.Add(this.cmdMostrar);
-            this.mrcRegistro.Controls.Add(this.cmdRegistrar);
-            this.mrcRegistro.Controls.Add(this.nudCantidad);
-            this.mrcRegistro.Controls.Add(this.cmdCancelar);
-            this.mrcRegistro.Controls.Add(this.label1);
-            this.mrcRegistro.Controls.Add(this.dtpFecha);
-            this.mrcRegistro.Controls.Add(this.lblID);
-            this.mrcRegistro.Controls.Add(this.lblNombre);
-            this.mrcRegistro.Controls.Add(this.lblFechaRegistro);
-            this.mrcRegistro.Controls.Add(this.txtID);
-            this.mrcRegistro.Controls.Add(this.txtNombre);
-            this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcRegistro.Location = new System.Drawing.Point(12, 91);
-            this.mrcRegistro.Name = "mrcRegistro";
-            this.mrcRegistro.Size = new System.Drawing.Size(328, 281);
-            this.mrcRegistro.TabIndex = 11;
-            this.mrcRegistro.TabStop = false;
-            this.mrcRegistro.Text = "Datos de Registro";
+            this.mrcVentas.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.mrcVentas.Controls.Add(this.cmdConsilta);
+            this.mrcVentas.Controls.Add(this.cmdRegistrar);
+            this.mrcVentas.Controls.Add(this.nudCantidad);
+            this.mrcVentas.Controls.Add(this.cmdCancelar);
+            this.mrcVentas.Controls.Add(this.label1);
+            this.mrcVentas.Controls.Add(this.dtpFecha);
+            this.mrcVentas.Controls.Add(this.lblID);
+            this.mrcVentas.Controls.Add(this.lblNombre);
+            this.mrcVentas.Controls.Add(this.lblFechaVenta);
+            this.mrcVentas.Controls.Add(this.txtID);
+            this.mrcVentas.Controls.Add(this.txtNombre);
+            this.mrcVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcVentas.Location = new System.Drawing.Point(12, 12);
+            this.mrcVentas.Name = "mrcVentas";
+            this.mrcVentas.Size = new System.Drawing.Size(336, 281);
+            this.mrcVentas.TabIndex = 12;
+            this.mrcVentas.TabStop = false;
+            this.mrcVentas.Text = "Datos de tu Venta";
             // 
-            // cmdMostrar
+            // cmdConsilta
             // 
-            this.cmdMostrar.BackColor = System.Drawing.Color.Tan;
-            this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdMostrar.Location = new System.Drawing.Point(111, 226);
-            this.cmdMostrar.Name = "cmdMostrar";
-            this.cmdMostrar.Size = new System.Drawing.Size(95, 36);
-            this.cmdMostrar.TabIndex = 14;
-            this.cmdMostrar.Text = "Mostrar";
-            this.cmdMostrar.UseVisualStyleBackColor = false;
-            this.cmdMostrar.Click += new System.EventHandler(this.cmdMostrar_Click_1);
+            this.cmdConsilta.BackColor = System.Drawing.Color.Tan;
+            this.cmdConsilta.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConsilta.Location = new System.Drawing.Point(111, 226);
+            this.cmdConsilta.Name = "cmdConsilta";
+            this.cmdConsilta.Size = new System.Drawing.Size(95, 36);
+            this.cmdConsilta.TabIndex = 14;
+            this.cmdConsilta.Text = "Mostrar";
+            this.cmdConsilta.UseVisualStyleBackColor = false;
             // 
             // cmdRegistrar
             // 
@@ -90,7 +87,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cmdRegistrar.TabIndex = 13;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = false;
-            this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click_1);
+            this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
             // 
             // nudCantidad
             // 
@@ -113,7 +110,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 126);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 21);
@@ -131,7 +128,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(6, 35);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(117, 21);
@@ -141,22 +138,22 @@ namespace pryI.E.F.I.ReboriRenzo
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(6, 77);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(68, 21);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblFechaRegistro
+            // lblFechaVenta
             // 
-            this.lblFechaRegistro.AutoSize = true;
-            this.lblFechaRegistro.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaRegistro.Location = new System.Drawing.Point(85, 168);
-            this.lblFechaRegistro.Name = "lblFechaRegistro";
-            this.lblFechaRegistro.Size = new System.Drawing.Size(132, 21);
-            this.lblFechaRegistro.TabIndex = 3;
-            this.lblFechaRegistro.Text = "Fecha de Registro";
+            this.lblFechaVenta.AutoSize = true;
+            this.lblFechaVenta.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaVenta.Location = new System.Drawing.Point(85, 168);
+            this.lblFechaVenta.Name = "lblFechaVenta";
+            this.lblFechaVenta.Size = new System.Drawing.Size(113, 21);
+            this.lblFechaVenta.TabIndex = 3;
+            this.lblFechaVenta.Text = "Fecha de Venta";
             // 
             // txtID
             // 
@@ -176,31 +173,25 @@ namespace pryI.E.F.I.ReboriRenzo
             this.txtNombre.Size = new System.Drawing.Size(213, 28);
             this.txtNombre.TabIndex = 5;
             // 
-            // frmRegistro
+            // frmCargaDeVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 384);
-            this.Controls.Add(this.mrcRegistro);
-            this.Name = "frmRegistro";
-            this.Text = "Registro";
-            this.Load += new System.EventHandler(this.frmRegistro_Load);
-            this.mrcRegistro.ResumeLayout(false);
-            this.mrcRegistro.PerformLayout();
+            this.ClientSize = new System.Drawing.Size(356, 303);
+            this.Controls.Add(this.mrcVentas);
+            this.Name = "frmCargaDeVentas";
+            this.Text = "CargaDeVentas";
+            this.mrcVentas.ResumeLayout(false);
+            this.mrcVentas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             this.ResumeLayout(false);
 
         }
 
-        private void cmdMostrar_Click_1(object sender, EventArgs e)
-        {
-            ventanaConsultas.ShowDialog();
-            this.Hide();
-        }
-
         #endregion
 
-        private System.Windows.Forms.GroupBox mrcRegistro;
+        private System.Windows.Forms.GroupBox mrcVentas;
+        private System.Windows.Forms.Button cmdConsilta;
         private System.Windows.Forms.Button cmdRegistrar;
         private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.Button cmdCancelar;
@@ -208,9 +199,8 @@ namespace pryI.E.F.I.ReboriRenzo
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblFechaRegistro;
+        private System.Windows.Forms.Label lblFechaVenta;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button cmdMostrar;
     }
 }

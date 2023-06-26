@@ -28,33 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvRegistro = new System.Windows.Forms.DataGridView();
-            this.IDPRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmdMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRegistro
             // 
-            this.dgvRegistro.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvRegistro.BackgroundColor = System.Drawing.Color.Tan;
+            this.dgvRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegistro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDPRODUCTO,
+            this.Column1,
             this.Nombre,
             this.Cantidad,
             this.Fecha});
-            this.dgvRegistro.Location = new System.Drawing.Point(20, 12);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRegistro.EnableHeadersVisualStyles = false;
+            this.dgvRegistro.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvRegistro.Location = new System.Drawing.Point(12, 12);
             this.dgvRegistro.Name = "dgvRegistro";
-            this.dgvRegistro.Size = new System.Drawing.Size(452, 225);
-            this.dgvRegistro.TabIndex = 1;
+            this.dgvRegistro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRegistro.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRegistro.Size = new System.Drawing.Size(449, 228);
+            this.dgvRegistro.TabIndex = 3;
             // 
-            // IDPRODUCTO
+            // Column1
             // 
-            this.IDPRODUCTO.HeaderText = "ID PRODUCTO";
-            this.IDPRODUCTO.Name = "IDPRODUCTO";
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "ID Producto";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Nombre
             // 
@@ -63,30 +95,20 @@
             // 
             // Cantidad
             // 
-            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.HeaderText = "Cantidad de Productos";
             this.Cantidad.Name = "Cantidad";
             // 
             // Fecha
             // 
-            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.HeaderText = "Fecha que Caduca";
             this.Fecha.Name = "Fecha";
-            // 
-            // cmdMostrar
-            // 
-            this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdMostrar.Location = new System.Drawing.Point(183, 249);
-            this.cmdMostrar.Name = "cmdMostrar";
-            this.cmdMostrar.Size = new System.Drawing.Size(109, 45);
-            this.cmdMostrar.TabIndex = 2;
-            this.cmdMostrar.Text = "Mostrar Registro";
-            this.cmdMostrar.UseVisualStyleBackColor = true;
             // 
             // frmConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 306);
-            this.Controls.Add(this.cmdMostrar);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(464, 246);
             this.Controls.Add(this.dgvRegistro);
             this.Name = "frmConsultas";
             this.Text = "Consultas";
@@ -97,12 +119,10 @@
         }
 
         #endregion
-
         private System.Windows.Forms.DataGridView dgvRegistro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDPRODUCTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.Button cmdMostrar;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicioSesion));
             this.cmdIngresar = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtIniciarSesion = new System.Windows.Forms.TextBox();
@@ -93,6 +94,7 @@
             this.cmdCancelar.TabIndex = 10;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // frmInicioSesion
             // 
@@ -105,6 +107,7 @@
             this.Controls.Add(this.txtIniciarSesion);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblIniciarSesion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicioSesion";
             this.Text = "Inicio Sesion";
             this.Load += new System.EventHandler(this.frmInicioSesion_Load);

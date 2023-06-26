@@ -20,6 +20,11 @@ namespace pryI.E.F.I.ReboriRenzo
             InitializeComponent();
         }
 
+        private void dgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void frmConsultas_Load(object sender, EventArgs e)
         {
             indiceColumna = 0;
