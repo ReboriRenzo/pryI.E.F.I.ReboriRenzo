@@ -1,4 +1,6 @@
-﻿namespace pryI.E.F.I.ReboriRenzo
+﻿using System;
+
+namespace pryI.E.F.I.ReboriRenzo
 {
     partial class frmCargaDeVentas
     {
@@ -29,178 +31,197 @@
         private void InitializeComponent()
         {
             this.mrcVentas = new System.Windows.Forms.GroupBox();
-            this.cmdConsilta = new System.Windows.Forms.Button();
-            this.cmdRegistrar = new System.Windows.Forms.Button();
-            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
+            this.cmdConsultas = new System.Windows.Forms.Button();
+            this.cmdCargarVenta = new System.Windows.Forms.Button();
+            this.nudCantidadVentas = new System.Windows.Forms.NumericUpDown();
             this.cmdCancelar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.lblID = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.dtpFechaVentas = new System.Windows.Forms.DateTimePicker();
+            this.lblIDVentas = new System.Windows.Forms.Label();
+            this.lblNombreVentas = new System.Windows.Forms.Label();
             this.lblFechaVenta = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtIDVentas = new System.Windows.Forms.TextBox();
+            this.txtNombreVentas = new System.Windows.Forms.TextBox();
             this.mrcVentas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // mrcVentas
             // 
             this.mrcVentas.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.mrcVentas.Controls.Add(this.cmdConsilta);
-            this.mrcVentas.Controls.Add(this.cmdRegistrar);
-            this.mrcVentas.Controls.Add(this.nudCantidad);
+            this.mrcVentas.Controls.Add(this.cmdConsultas);
+            this.mrcVentas.Controls.Add(this.cmdCargarVenta);
+            this.mrcVentas.Controls.Add(this.nudCantidadVentas);
             this.mrcVentas.Controls.Add(this.cmdCancelar);
-            this.mrcVentas.Controls.Add(this.label1);
-            this.mrcVentas.Controls.Add(this.dtpFecha);
-            this.mrcVentas.Controls.Add(this.lblID);
-            this.mrcVentas.Controls.Add(this.lblNombre);
+            this.mrcVentas.Controls.Add(this.lblCantidad);
+            this.mrcVentas.Controls.Add(this.dtpFechaVentas);
+            this.mrcVentas.Controls.Add(this.lblIDVentas);
+            this.mrcVentas.Controls.Add(this.lblNombreVentas);
             this.mrcVentas.Controls.Add(this.lblFechaVenta);
-            this.mrcVentas.Controls.Add(this.txtID);
-            this.mrcVentas.Controls.Add(this.txtNombre);
+            this.mrcVentas.Controls.Add(this.txtIDVentas);
+            this.mrcVentas.Controls.Add(this.txtNombreVentas);
             this.mrcVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcVentas.Location = new System.Drawing.Point(12, 12);
             this.mrcVentas.Name = "mrcVentas";
-            this.mrcVentas.Size = new System.Drawing.Size(336, 281);
+            this.mrcVentas.Size = new System.Drawing.Size(336, 265);
             this.mrcVentas.TabIndex = 12;
             this.mrcVentas.TabStop = false;
             this.mrcVentas.Text = "Datos de tu Venta";
             // 
-            // cmdConsilta
+            // cmdConsultas
             // 
-            this.cmdConsilta.BackColor = System.Drawing.Color.Tan;
-            this.cmdConsilta.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdConsilta.Location = new System.Drawing.Point(111, 226);
-            this.cmdConsilta.Name = "cmdConsilta";
-            this.cmdConsilta.Size = new System.Drawing.Size(95, 36);
-            this.cmdConsilta.TabIndex = 14;
-            this.cmdConsilta.Text = "Mostrar";
-            this.cmdConsilta.UseVisualStyleBackColor = false;
+            this.cmdConsultas.BackColor = System.Drawing.Color.Tan;
+            this.cmdConsultas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConsultas.Location = new System.Drawing.Point(104, 226);
+            this.cmdConsultas.Name = "cmdConsultas";
+            this.cmdConsultas.Size = new System.Drawing.Size(125, 36);
+            this.cmdConsultas.TabIndex = 14;
+            this.cmdConsultas.Text = "Consultar Venta";
+            this.cmdConsultas.UseVisualStyleBackColor = false;
+            this.cmdConsultas.Click += new System.EventHandler(this.cmdConsultas_Click);
             // 
-            // cmdRegistrar
+            // cmdCargarVenta
             // 
-            this.cmdRegistrar.BackColor = System.Drawing.Color.Tan;
-            this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdRegistrar.Location = new System.Drawing.Point(212, 226);
-            this.cmdRegistrar.Name = "cmdRegistrar";
-            this.cmdRegistrar.Size = new System.Drawing.Size(95, 36);
-            this.cmdRegistrar.TabIndex = 13;
-            this.cmdRegistrar.Text = "Registrar";
-            this.cmdRegistrar.UseVisualStyleBackColor = false;
-            this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
+            this.cmdCargarVenta.BackColor = System.Drawing.Color.Tan;
+            this.cmdCargarVenta.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCargarVenta.Location = new System.Drawing.Point(235, 226);
+            this.cmdCargarVenta.Name = "cmdCargarVenta";
+            this.cmdCargarVenta.Size = new System.Drawing.Size(95, 36);
+            this.cmdCargarVenta.TabIndex = 13;
+            this.cmdCargarVenta.Text = "Cargar";
+            this.cmdCargarVenta.UseVisualStyleBackColor = false;
+            this.cmdCargarVenta.Click += new System.EventHandler(this.cmdRegistrar_Click);
             // 
-            // nudCantidad
+            // nudCantidadVentas
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(89, 126);
-            this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(93, 28);
-            this.nudCantidad.TabIndex = 13;
+            this.nudCantidadVentas.BackColor = System.Drawing.Color.DarkGray;
+            this.nudCantidadVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCantidadVentas.Location = new System.Drawing.Point(129, 126);
+            this.nudCantidadVentas.Name = "nudCantidadVentas";
+            this.nudCantidadVentas.Size = new System.Drawing.Size(201, 28);
+            this.nudCantidadVentas.TabIndex = 13;
             // 
             // cmdCancelar
             // 
             this.cmdCancelar.BackColor = System.Drawing.Color.Tan;
             this.cmdCancelar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdCancelar.Location = new System.Drawing.Point(10, 226);
+            this.cmdCancelar.Location = new System.Drawing.Point(3, 226);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(95, 36);
             this.cmdCancelar.TabIndex = 12;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblCantidad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 21);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(26, 126);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(72, 21);
+            this.lblCantidad.TabIndex = 12;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // dtpFecha
+            // dtpFechaVentas
             // 
-            this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(3, 192);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(304, 28);
-            this.dtpFecha.TabIndex = 7;
+            this.dtpFechaVentas.CalendarMonthBackground = System.Drawing.Color.DarkGray;
+            this.dtpFechaVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaVentas.Location = new System.Drawing.Point(23, 192);
+            this.dtpFechaVentas.Name = "dtpFechaVentas";
+            this.dtpFechaVentas.Size = new System.Drawing.Size(297, 28);
+            this.dtpFechaVentas.TabIndex = 7;
             // 
-            // lblID
+            // lblIDVentas
             // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(6, 35);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(117, 21);
-            this.lblID.TabIndex = 1;
-            this.lblID.Text = "ID del producto";
+            this.lblIDVentas.AutoSize = true;
+            this.lblIDVentas.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIDVentas.Location = new System.Drawing.Point(6, 35);
+            this.lblIDVentas.Name = "lblIDVentas";
+            this.lblIDVentas.Size = new System.Drawing.Size(117, 21);
+            this.lblIDVentas.TabIndex = 1;
+            this.lblIDVentas.Text = "ID del producto";
             // 
-            // lblNombre
+            // lblNombreVentas
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(6, 77);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(68, 21);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre";
+            this.lblNombreVentas.AutoSize = true;
+            this.lblNombreVentas.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreVentas.Location = new System.Drawing.Point(30, 84);
+            this.lblNombreVentas.Name = "lblNombreVentas";
+            this.lblNombreVentas.Size = new System.Drawing.Size(68, 21);
+            this.lblNombreVentas.TabIndex = 2;
+            this.lblNombreVentas.Text = "Nombre";
             // 
             // lblFechaVenta
             // 
             this.lblFechaVenta.AutoSize = true;
-            this.lblFechaVenta.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaVenta.Location = new System.Drawing.Point(85, 168);
+            this.lblFechaVenta.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaVenta.Location = new System.Drawing.Point(99, 164);
             this.lblFechaVenta.Name = "lblFechaVenta";
-            this.lblFechaVenta.Size = new System.Drawing.Size(113, 21);
+            this.lblFechaVenta.Size = new System.Drawing.Size(141, 25);
             this.lblFechaVenta.TabIndex = 3;
             this.lblFechaVenta.Text = "Fecha de Venta";
             // 
-            // txtID
+            // txtIDVentas
             // 
-            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtID.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(129, 28);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(173, 28);
-            this.txtID.TabIndex = 6;
+            this.txtIDVentas.BackColor = System.Drawing.Color.DarkGray;
+            this.txtIDVentas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIDVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDVentas.Location = new System.Drawing.Point(129, 28);
+            this.txtIDVentas.Name = "txtIDVentas";
+            this.txtIDVentas.Size = new System.Drawing.Size(203, 28);
+            this.txtIDVentas.TabIndex = 6;
             // 
-            // txtNombre
+            // txtNombreVentas
             // 
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(89, 77);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(213, 28);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombreVentas.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNombreVentas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombreVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreVentas.Location = new System.Drawing.Point(129, 77);
+            this.txtNombreVentas.Name = "txtNombreVentas";
+            this.txtNombreVentas.Size = new System.Drawing.Size(201, 28);
+            this.txtNombreVentas.TabIndex = 5;
             // 
             // frmCargaDeVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 303);
+            this.ClientSize = new System.Drawing.Size(356, 287);
             this.Controls.Add(this.mrcVentas);
             this.Name = "frmCargaDeVentas";
-            this.Text = "CargaDeVentas";
+            this.Text = "Carga de Ventas";
+            this.Load += new System.EventHandler(this.frmCargaDeVentas_Load);
             this.mrcVentas.ResumeLayout(false);
             this.mrcVentas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadVentas)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void frmCargaDeVentas_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmdConsultas_Click(object sender, EventArgs e)
+        {
+            frmConsultarVentas frmConsultarVentas = new frmConsultarVentas();
+            frmConsultarVentas.ShowDialog();
+            this.Hide();
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox mrcVentas;
-        private System.Windows.Forms.Button cmdConsilta;
-        private System.Windows.Forms.Button cmdRegistrar;
-        private System.Windows.Forms.NumericUpDown nudCantidad;
+        private System.Windows.Forms.Button cmdConsultas;
+        private System.Windows.Forms.Button cmdCargarVenta;
+        private System.Windows.Forms.NumericUpDown nudCantidadVentas;
         private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.DateTimePicker dtpFechaVentas;
+        private System.Windows.Forms.Label lblIDVentas;
+        private System.Windows.Forms.Label lblNombreVentas;
         private System.Windows.Forms.Label lblFechaVenta;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtIDVentas;
+        private System.Windows.Forms.TextBox txtNombreVentas;
     }
 }

@@ -94,17 +94,20 @@ namespace pryI.E.F.I.ReboriRenzo
                             MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
-
                     else
+                    {
                         MessageBox.Show("Cantidad invalida a lo esperado", "Determine un valor cierto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
+                {
                     MessageBox.Show("Nombre del producto inexistente", "NOMBRE INCORRECTO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-
+                }
             }
             else
+            {
                 MessageBox.Show("ID del producto inexistente", "ERROR EN EL ID", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-
+            }
         }
     }
 }

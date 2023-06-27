@@ -12,7 +12,7 @@ namespace pryI.E.F.I.ReboriRenzo
 {
     public partial class frmConsultas : Form
     {
-        public string[,] matrizRegistro = new string[4, 4];
+        public string[,] matrizRegistro = new string[10, 10];
         int indiceFila, indiceColumna;
 
         public frmConsultas()
@@ -21,6 +21,11 @@ namespace pryI.E.F.I.ReboriRenzo
         }
 
         private void dgvRegistro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvRegistro_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -35,7 +40,14 @@ namespace pryI.E.F.I.ReboriRenzo
                 dgvRegistro.Rows.Add(matrizRegistro[indiceFila, 0],
                     matrizRegistro[indiceFila, 1],
                     matrizRegistro[indiceFila, 2],
-                    matrizRegistro[indiceFila, 3]);
+                    matrizRegistro[indiceFila, 3],
+                    matrizRegistro[indiceFila, 4],
+                    matrizRegistro[indiceFila, 5],
+                    matrizRegistro[indiceFila, 6],
+                    matrizRegistro[indiceFila, 7],
+                    matrizRegistro[indiceFila, 8],
+                    matrizRegistro[indiceFila, 9]);
+
 
                 indiceFila++;
             }
