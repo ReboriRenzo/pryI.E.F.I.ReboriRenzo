@@ -61,7 +61,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.mrcRegistro.Controls.Add(this.txtID);
             this.mrcRegistro.Controls.Add(this.txtNombre);
             this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcRegistro.Location = new System.Drawing.Point(12, 91);
+            this.mrcRegistro.Location = new System.Drawing.Point(12, 12);
             this.mrcRegistro.Name = "mrcRegistro";
             this.mrcRegistro.Size = new System.Drawing.Size(328, 281);
             this.mrcRegistro.TabIndex = 11;
@@ -184,7 +184,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 384);
+            this.ClientSize = new System.Drawing.Size(349, 305);
             this.Controls.Add(this.mrcRegistro);
             this.Name = "frmRegistro";
             this.Text = "Registro";

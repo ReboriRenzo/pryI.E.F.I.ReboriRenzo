@@ -32,17 +32,18 @@ namespace pryI.E.F.I.ReboriRenzo
             while (indiceFila < matrizCargas.GetLength(0))
             {
                 dgvCargadeVentas.Rows.Add(matrizCargas[indiceFila, 0],
-                matrizCargas[indiceFila, 1],
-                matrizCargas[indiceFila, 2],
-                matrizCargas[indiceFila, 3],
-                matrizCargas[indiceFila, 4],
-                matrizCargas[indiceFila, 5],
-                matrizCargas[indiceFila, 6],
-                matrizCargas[indiceFila, 7],
-                matrizCargas[indiceFila, 8],
-                matrizCargas[indiceFila, 9]);
+                    matrizCargas[indiceFila, 1],
+                    matrizCargas[indiceFila, 2],
+                    matrizCargas[indiceFila, 3],
+                    matrizCargas[indiceFila, 4],
+                    matrizCargas[indiceFila, 5],
+                    matrizCargas[indiceFila, 6],
+                    matrizCargas[indiceFila, 7],
+                    matrizCargas[indiceFila, 8],
+                    matrizCargas[indiceFila, 9]);
 
-            indiceFila++;
+
+                   indiceFila++;
 
             }
         }

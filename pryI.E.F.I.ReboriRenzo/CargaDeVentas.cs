@@ -30,13 +30,13 @@ namespace pryI.E.F.I.ReboriRenzo
                     {
                         if (dtpFechaVentas.Value >= DateTime.Today)
                         {
-                            MessageBox.Show("Tus ventas fueron cargadas correctamente, Haz click en CONSULTAR para ver tus ventas", "Ventas Cargadas", MessageBoxButtons.OK);
+                            MessageBox.Show("Productos Cargados correctamente", "Producto Cargado!!", MessageBoxButtons.OK, MessageBoxIcon.None);
+
 
                             ventanaConsultarVentas.matrizCargas[indiceFilaConsultas, 0] = txtIDVentas.Text;
                             ventanaConsultarVentas.matrizCargas[indiceFilaConsultas, 1] = txtNombreVentas.Text;
                             ventanaConsultarVentas.matrizCargas[indiceFilaConsultas, 2] = nudCantidadVentas.Value.ToString();
                             ventanaConsultarVentas.matrizCargas[indiceFilaConsultas, 3] = dtpFechaVentas.Value.ToString();
-
 
                             indiceFilaConsultas++;
 
@@ -45,25 +45,26 @@ namespace pryI.E.F.I.ReboriRenzo
                                 cmdCargarVenta.Enabled = false;
                             }
 
+
                         }
                         else
                         {
-                            MessageBox.Show("El dia de la ventana tiene que ser hoy o anterior", "Determine una fecha valida", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                            MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Cantidad nula, seleccione una cantidad valida", "Cantidad Nula", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                        MessageBox.Show("Cantidad invalida a lo esperado", "Determine un valor cierto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("El Producto no existe o la casilla esta NULA", "Nombre del Producto no valido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nombre del producto inexistente", "NOMBRE INCORRECTO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
                 }
             }
             else
             {
-                MessageBox.Show("El ID del prodecuto no existe, Verificar", "Verificar ID del producto a Cargar", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("ID del producto inexistente", "ERROR EN EL ID", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
         }
     }
