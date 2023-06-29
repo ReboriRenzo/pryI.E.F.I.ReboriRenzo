@@ -15,7 +15,8 @@ namespace pryI.E.F.I.ReboriRenzo
         frmConsultarVentas ventanaConsultarVentas = new frmConsultarVentas();
         readonly int indiceConsultas = 0;
         int indiceFilaConsultas;
-
+        public string dato = "";
+        
         public frmCargarVentas()
         {
             InitializeComponent();
@@ -57,7 +58,7 @@ namespace pryI.E.F.I.ReboriRenzo
                         }
                         else
                         {
-                            MessageBox.Show("La fecha seleccionada es mayor a hoy", "Verifique la venta de su producto");
+                            MessageBox.Show("La fecha seleccionada es mayor a hoy", "Verifique la venta de su producto", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -76,10 +77,27 @@ namespace pryI.E.F.I.ReboriRenzo
                 MessageBox.Show("El ID del producto no existe !!", "Verifique el ID del producto", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             }      
         }
+        private void Busqueda_en_grid(DataGridView d, int col)
+        {
+            for(int i =0; i<d.Rows.Count - 1; i++) 
+            {
+                dato = Convert.ToString(d.Rows[i].Cells[col].Value);
+                if(dato == txtIDVentas.Text.Trim())
+                {
+                    MessageBox.Show("si");
+                    break;
+                }
+            }
+        }
 
         private void cmdConsultarVentas_Click(object sender, EventArgs e)
         {
             ventanaConsultarVentas.ShowDialog();
+
+        }
+
+        private void frmCargarVentas_Load(object sender, EventArgs e)
+        {
 
         }
     }

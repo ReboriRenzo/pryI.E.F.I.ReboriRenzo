@@ -14,3 +14,4 @@ C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmConsultas.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmConsultarVentas.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargarVentas.resources
+C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmEstadisticasCargayVenta.resources

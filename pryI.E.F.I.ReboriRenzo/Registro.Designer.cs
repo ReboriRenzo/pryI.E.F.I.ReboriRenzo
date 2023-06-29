@@ -30,6 +30,7 @@ namespace pryI.E.F.I.ReboriRenzo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistro));
             this.mrcRegistro = new System.Windows.Forms.GroupBox();
             this.cmdMostrar = new System.Windows.Forms.Button();
             this.cmdRegistrar = new System.Windows.Forms.Button();
@@ -42,8 +43,10 @@ namespace pryI.E.F.I.ReboriRenzo
             this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mrcRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mrcRegistro
@@ -60,10 +63,11 @@ namespace pryI.E.F.I.ReboriRenzo
             this.mrcRegistro.Controls.Add(this.lblFechaRegistro);
             this.mrcRegistro.Controls.Add(this.txtID);
             this.mrcRegistro.Controls.Add(this.txtNombre);
+            this.mrcRegistro.Controls.Add(this.pictureBox1);
             this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcRegistro.Location = new System.Drawing.Point(12, 12);
             this.mrcRegistro.Name = "mrcRegistro";
-            this.mrcRegistro.Size = new System.Drawing.Size(328, 281);
+            this.mrcRegistro.Size = new System.Drawing.Size(320, 272);
             this.mrcRegistro.TabIndex = 11;
             this.mrcRegistro.TabStop = false;
             this.mrcRegistro.Text = "Datos de Registro";
@@ -71,6 +75,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdMostrar
             // 
             this.cmdMostrar.BackColor = System.Drawing.Color.Tan;
+            this.cmdMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdMostrar.Location = new System.Drawing.Point(111, 226);
             this.cmdMostrar.Name = "cmdMostrar";
@@ -83,6 +88,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdRegistrar
             // 
             this.cmdRegistrar.BackColor = System.Drawing.Color.Tan;
+            this.cmdRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistrar.Location = new System.Drawing.Point(212, 226);
             this.cmdRegistrar.Name = "cmdRegistrar";
@@ -104,6 +110,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // cmdCancelar
             // 
             this.cmdCancelar.BackColor = System.Drawing.Color.Tan;
+            this.cmdCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdCancelar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancelar.Location = new System.Drawing.Point(10, 226);
             this.cmdCancelar.Name = "cmdCancelar";
@@ -180,18 +187,30 @@ namespace pryI.E.F.I.ReboriRenzo
             this.txtNombre.Size = new System.Drawing.Size(213, 28);
             this.txtNombre.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-11, -13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(331, 295);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 305);
+            this.ClientSize = new System.Drawing.Size(338, 290);
             this.Controls.Add(this.mrcRegistro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistro";
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.mrcRegistro.ResumeLayout(false);
             this.mrcRegistro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,5 +235,6 @@ namespace pryI.E.F.I.ReboriRenzo
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button cmdMostrar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

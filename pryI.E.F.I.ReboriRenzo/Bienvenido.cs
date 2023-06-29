@@ -31,5 +31,10 @@ namespace pryI.E.F.I.ReboriRenzo
 
             this.Close();
         }
+
+        private void frmBienvenido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

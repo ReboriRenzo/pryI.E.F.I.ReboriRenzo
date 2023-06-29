@@ -70,6 +70,12 @@
     <Compile Include="Consultas.Designer.cs">
       <DependentUpon>Consultas.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstadisticasCargayVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadisticasCargayVenta.Designer.cs">
+      <DependentUpon>EstadisticasCargayVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadisticasCargayVenta.resx">
+      <DependentUpon>EstadisticasCargayVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>

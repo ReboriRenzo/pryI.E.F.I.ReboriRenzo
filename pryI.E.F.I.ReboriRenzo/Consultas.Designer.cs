@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultas));
             this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,6 +112,7 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(464, 246);
             this.Controls.Add(this.dgvRegistro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultas";
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.frmConsultas_Load);
@@ -120,10 +122,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgvRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        public System.Windows.Forms.DataGridView dgvRegistro;
     }
 }

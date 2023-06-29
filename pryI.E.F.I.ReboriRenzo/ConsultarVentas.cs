@@ -15,6 +15,7 @@ namespace pryI.E.F.I.ReboriRenzo
     {
         public string[,] matrizVentas = new string[10, 10];
         int indiceFila, indiceColumna;
+        string dato = "";
 
 
         public frmConsultarVentas()
@@ -22,37 +23,15 @@ namespace pryI.E.F.I.ReboriRenzo
             InitializeComponent();
         }
 
-        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        public void txtFiltro_TextChanged(object sender, EventArgs e)
         {
-            if (txtFiltro.Text != "")
-            {
-                dgvConsultarVentas.CurrentCell = null;
-                foreach (DataGridViewRow r in dgvConsultarVentas.Rows)
-                {
-                    r.Visible = true;
-                }
-                foreach (DataGridViewRow r in dgvConsultarVentas.Rows)
-                {
-                    foreach (DataGridViewCell c in r.Cells)
-                    {
-                        if (((c.Value.ToString().ToUpper())).IndexOf(txtFiltro.Text.ToUpper()) == 0)
-                        {
-                            r.Visible = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            
 
-                
-                
-
-                
-
-            
         }
-    
+
+        public void cmdBuscar_Click(object sender, EventArgs e)
+        {
+            Busqueda_en_grid
+        }
 
         private void frmConsultarVentas_Load(object sender, EventArgs e)
         {
@@ -72,8 +51,6 @@ namespace pryI.E.F.I.ReboriRenzo
                     matrizVentas[indiceFila, 8],
                     matrizVentas[indiceFila, 9]);
                 indiceFila++;
-
-
             }
         }
     }
