@@ -100,5 +100,10 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
+
+        private void dgvConsultarVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

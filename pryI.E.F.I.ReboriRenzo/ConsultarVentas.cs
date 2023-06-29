@@ -30,7 +30,7 @@ namespace pryI.E.F.I.ReboriRenzo
 
         public void cmdBuscar_Click(object sender, EventArgs e)
         {
-            Busqueda_en_grid
+            
         }
 
         private void frmConsultarVentas_Load(object sender, EventArgs e)

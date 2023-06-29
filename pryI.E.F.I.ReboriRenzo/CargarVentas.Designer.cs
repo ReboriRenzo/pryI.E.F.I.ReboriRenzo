@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargarVentas));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mrcCargaDeVentas = new System.Windows.Forms.GroupBox();
             this.cmdCargarVentas = new System.Windows.Forms.Button();
             this.cmdConsultarVentas = new System.Windows.Forms.Button();
@@ -40,8 +45,22 @@
             this.lblCantidadVentas = new System.Windows.Forms.Label();
             this.lblNombreVentas = new System.Windows.Forms.Label();
             this.lblIDVentas = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgvConsultarVentas = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mrcCargaDeVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // mrcCargaDeVentas
@@ -57,12 +76,13 @@
             this.mrcCargaDeVentas.Controls.Add(this.lblCantidadVentas);
             this.mrcCargaDeVentas.Controls.Add(this.lblNombreVentas);
             this.mrcCargaDeVentas.Controls.Add(this.lblIDVentas);
+            this.mrcCargaDeVentas.Controls.Add(this.pictureBox1);
             this.mrcCargaDeVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcCargaDeVentas.Location = new System.Drawing.Point(14, 14);
+            this.mrcCargaDeVentas.Location = new System.Drawing.Point(34, 8);
             this.mrcCargaDeVentas.Margin = new System.Windows.Forms.Padding(5);
             this.mrcCargaDeVentas.Name = "mrcCargaDeVentas";
             this.mrcCargaDeVentas.Padding = new System.Windows.Forms.Padding(5);
-            this.mrcCargaDeVentas.Size = new System.Drawing.Size(388, 272);
+            this.mrcCargaDeVentas.Size = new System.Drawing.Size(389, 217);
             this.mrcCargaDeVentas.TabIndex = 0;
             this.mrcCargaDeVentas.TabStop = false;
             this.mrcCargaDeVentas.Text = "Carga De Ventas";
@@ -195,13 +215,119 @@
             this.lblIDVentas.Text = "ID del Producto";
             this.lblIDVentas.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(46, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(376, 221);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(2, 5);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(454, 265);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.mrcCargaDeVentas);
+            this.tabPage1.Location = new System.Drawing.Point(4, 30);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(446, 231);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvConsultarVentas);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(446, 231);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dgvConsultarVentas
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvConsultarVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvConsultarVentas.BackgroundColor = System.Drawing.Color.BurlyWood;
+            this.dgvConsultarVentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultarVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvConsultarVentas.ColumnHeadersHeight = 40;
+            this.dgvConsultarVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvConsultarVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Column1,
+            this.Cantidad,
+            this.FechaVenta});
+            this.dgvConsultarVentas.EnableHeadersVisualStyles = false;
+            this.dgvConsultarVentas.Location = new System.Drawing.Point(2, 6);
+            this.dgvConsultarVentas.Name = "dgvConsultarVentas";
+            this.dgvConsultarVentas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultarVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvConsultarVentas.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvConsultarVentas.Size = new System.Drawing.Size(444, 222);
+            this.dgvConsultarVentas.TabIndex = 1;
+            this.dgvConsultarVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultarVentas_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID del Producto";
+            this.ID.Name = "ID";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nombre del Producto";
+            this.Column1.Name = "Column1";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad Vendida";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // FechaVenta
+            // 
+            this.FechaVenta.HeaderText = "Fecha de Venta";
+            this.FechaVenta.Name = "FechaVenta";
+            // 
             // frmCargarVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 293);
-            this.Controls.Add(this.mrcCargaDeVentas);
+            this.ClientSize = new System.Drawing.Size(459, 282);
+            this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmCargarVentas";
             this.Text = "CargarVentas";
@@ -209,6 +335,11 @@
             this.mrcCargaDeVentas.ResumeLayout(false);
             this.mrcCargaDeVentas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarVentas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +358,14 @@
         private System.Windows.Forms.Button cmdCargarVentas;
         private System.Windows.Forms.Button cmdConsultarVentas;
         private System.Windows.Forms.Button cmdVolver;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.DataGridView dgvConsultarVentas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaVenta;
     }
 }
