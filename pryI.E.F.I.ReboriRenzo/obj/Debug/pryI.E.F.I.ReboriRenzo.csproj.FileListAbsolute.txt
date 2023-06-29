@@ -12,5 +12,5 @@ C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.pdb
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmRegistro.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmConsultas.resources
-C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargaDeVentas.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmConsultarVentas.resources
+C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargarVentas.resources

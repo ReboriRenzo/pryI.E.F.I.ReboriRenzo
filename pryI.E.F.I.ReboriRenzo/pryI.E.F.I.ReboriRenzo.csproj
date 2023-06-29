@@ -52,11 +52,11 @@
     <Compile Include="Bienvenido.Designer.cs">
       <DependentUpon>Bienvenido.cs</DependentUpon>
     </Compile>
-    <Compile Include="CargaDeVentas.cs">
+    <Compile Include="CargarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CargaDeVentas.Designer.cs">
-      <DependentUpon>CargaDeVentas.cs</DependentUpon>
+    <Compile Include="CargarVentas.Designer.cs">
+      <DependentUpon>CargarVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarVentas.cs">
       <SubType>Form</SubType>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="Bienvenido.resx">
       <DependentUpon>Bienvenido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CargaDeVentas.resx">
-      <DependentUpon>CargaDeVentas.cs</DependentUpon>
+    <EmbeddedResource Include="CargarVentas.resx">
+      <DependentUpon>CargarVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVentas.resx">
       <DependentUpon>ConsultarVentas.cs</DependentUpon>
