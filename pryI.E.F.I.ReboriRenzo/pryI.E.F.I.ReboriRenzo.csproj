@@ -58,18 +58,6 @@
     <Compile Include="CargarVentas.Designer.cs">
       <DependentUpon>CargarVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConsultarVentas.Designer.cs">
-      <DependentUpon>ConsultarVentas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Consultas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultas.Designer.cs">
-      <DependentUpon>Consultas.cs</DependentUpon>
-    </Compile>
     <Compile Include="EstadisticasCargayVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,17 +78,12 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs" />
     <EmbeddedResource Include="Bienvenido.resx">
       <DependentUpon>Bienvenido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CargarVentas.resx">
       <DependentUpon>CargarVentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarVentas.resx">
-      <DependentUpon>ConsultarVentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consultas.resx">
-      <DependentUpon>Consultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstadisticasCargayVenta.resx">
       <DependentUpon>EstadisticasCargayVenta.cs</DependentUpon>

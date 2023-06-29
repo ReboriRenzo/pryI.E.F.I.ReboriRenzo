@@ -12,11 +12,7 @@ namespace pryI.E.F.I.ReboriRenzo
 {
     public partial class frmCargarVentas : Form
     {
-        frmConsultarVentas ventanaConsultarVentas = new frmConsultarVentas();
-        readonly int indiceConsultas = 0;
-        int indiceFilaConsultas;
-        public string dato = "";
-        
+        List<Ventas> listaVentas = new List<Ventas> ();
         public frmCargarVentas()
         {
             InitializeComponent();
@@ -38,23 +34,31 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 if (txtNombreproductoVentas.Text != "")
                 {
-                    if (nudCantidad.Value >= 1)
+                    if (nudCantidadventas.Value >= 1)
                     {
                         if (dtpFechaVenta.Value <= DateTime.Today)
                         {
                             MessageBox.Show("Haz cargado tus ventas correctamente", "Ventas Cargadas", MessageBoxButtons.OKCancel, MessageBoxIcon.None);
 
-                            ventanaConsultarVentas.matrizVentas[indiceFilaConsultas, 0] = txtIDVentas.Text;
-                            ventanaConsultarVentas.matrizVentas[indiceFilaConsultas, 1] = txtNombreproductoVentas.Text;
-                            ventanaConsultarVentas.matrizVentas[indiceFilaConsultas, 2] = nudCantidad.Value.ToString();
-                            ventanaConsultarVentas.matrizVentas[indiceFilaConsultas, 3] = dtpFechaVenta.Value.ToString();
+                            Ventas nuevaVenta = new Ventas();
 
-                            indiceFilaConsultas++;
+                            nuevaVenta.ID = (listaVentas.Count + 1);
+                            nuevaVenta.FechaVenta = dtpFechaVenta.Value;
+                            nuevaVenta.Producto = txtNombreproductoVentas.Text;
+                            nuevaVenta.Cantidad = int.Parse(nudCantidadventas.Text);
 
-                            if (indiceFilaConsultas == ventanaConsultarVentas.matrizVentas.GetLength(0))
-                            {
-                                cmdCargarVentas.Enabled = false;
-                            }
+                            listaVentas.Add(nuevaVenta);
+                            cbVentas.DataSource = null;
+                            cbVentas.DataSource = listaVentas;
+                            cbVentas.DisplayMember = "Producto";
+                            txtNombreproductoVentas.Focus();
+
+                            int n = dgvConsultarVentas.Rows.Add();
+
+                            dgvConsultarVentas.Rows[n].Cells[0].Value = txtIDVentas.Text;
+                            dgvConsultarVentas.Rows[n].Cells[1].Value = txtNombreproductoVentas.Text;
+                            dgvConsultarVentas.Rows[n].Cells[2].Value = nudCantidadventas.Value.ToString();
+                            dgvConsultarVentas.Rows[n].Cells[3].Value = dtpFechaVenta.Value.ToString();
                         }
                         else
                         {
@@ -77,22 +81,13 @@ namespace pryI.E.F.I.ReboriRenzo
                 MessageBox.Show("El ID del producto no existe !!", "Verifique el ID del producto", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             }      
         }
-        private void Busqueda_en_grid(DataGridView d, int col)
-        {
-            for(int i =0; i<d.Rows.Count - 1; i++) 
-            {
-                dato = Convert.ToString(d.Rows[i].Cells[col].Value);
-                if(dato == txtIDVentas.Text.Trim())
-                {
-                    MessageBox.Show("si");
-                    break;
-                }
-            }
-        }
+        
+            
+     
 
         private void cmdConsultarVentas_Click(object sender, EventArgs e)
         {
-            ventanaConsultarVentas.ShowDialog();
+           
 
         }
 
@@ -105,5 +100,50 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCantidadVentas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdVolver_Click(object sender, EventArgs e)
+        {
+            frmBienvenido frmBienvenido = new frmBienvenido();
+            this.Close();
+        }
+
+        private void cmdFiltrar_Click(object sender, EventArgs e)
+        {
+            if (optCantidad.Checked) filtrarCantidad();
+
+            else filtrarProducto(); 
+        }
+
+        private void filtrarProducto()
+        {
+            List<Ventas> filtro = new List<Ventas>();
+            for (int i = 0; i < listaVentas.Count; i++)
+            {
+                if (listaVentas[i].Producto == txtBusqueda.Text) filtro.Add(listaVentas[i]);
+            }
+            cbVentas.DataSource = filtro;
+            cbVentas.DisplayMember = "Producto";
+        }
+
+        private void filtrarCantidad()
+        {
+            List<Ventas> filtro = new List<Ventas>();
+            for (int i = 0; i < listaVentas.Count; i++)
+            {
+                if (listaVentas[i].Cantidad > int.Parse(txtBusqueda.Text)) filtro.Add(listaVentas[i]);
+            }
+            cbVentas.DataSource = filtro;
+            cbVentas.DisplayMember = "Producto";
+            }
     }
 }

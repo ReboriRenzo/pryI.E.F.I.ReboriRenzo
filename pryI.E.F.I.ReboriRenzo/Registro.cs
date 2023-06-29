@@ -13,7 +13,6 @@ namespace pryI.E.F.I.ReboriRenzo
     public partial class frmRegistro : Form
 
     {
-        frmConsultas ventanaConsultas = new frmConsultas();
         readonly int indiceRegistro = 0;
         int indiceFilaRegistro;
         public frmRegistro()
@@ -35,15 +34,6 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
-
-        private void cmdConultar_Click(object sender, EventArgs e)
-        {
-            frmConsultas frmConsultas = new frmConsultas();
-            frmConsultas.ShowDialog();
-            this.Hide();
-        }
-
-        
 
         private void cmdMostrar_Click(object sender, EventArgs e)
         {
@@ -74,18 +64,14 @@ namespace pryI.E.F.I.ReboriRenzo
 
                             MessageBox.Show("Productos Cargados correctamente", "Producto Cargado!!", MessageBoxButtons.OK, MessageBoxIcon.None);
 
+                            int n = dgvRegistro.Rows.Add();
 
-                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 0] = txtID.Text;
-                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 1] = txtNombre.Text;
-                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 2] = nudCantidad.Value.ToString();
-                            ventanaConsultas.matrizRegistro[indiceFilaRegistro, 3] = dtpFecha.Value.ToString();
+                            dgvRegistro.Rows[n].Cells[0].Value = txtID.Text;
+                            dgvRegistro.Rows[n].Cells[1].Value = txtNombre.Text;
+                            dgvRegistro.Rows[n].Cells[2].Value = nudCantidad.Value.ToString();
+                            dgvRegistro.Rows[n].Cells[3].Value = dtpFecha.Value.ToString();
 
-                            indiceFilaRegistro++;
 
-                            if (indiceFilaRegistro == ventanaConsultas.matrizRegistro.GetLength(0))
-                            {
-                                cmdRegistrar.Enabled = false;
-                            }
 
 
                         }

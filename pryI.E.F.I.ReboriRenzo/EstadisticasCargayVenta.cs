@@ -16,7 +16,7 @@ namespace pryI.E.F.I.ReboriRenzo
         {
             InitializeComponent();
         }
-        frmConsultarVentas DatosVentas = new frmConsultarVentas();
+       
         private void frmEstadisticasCargayVenta_Load(object sender, EventArgs e)
         {
 
