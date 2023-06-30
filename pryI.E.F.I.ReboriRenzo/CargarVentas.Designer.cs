@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargarVentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mrcCargaDeVentas = new System.Windows.Forms.GroupBox();
             this.cmdCargarVentas = new System.Windows.Forms.Button();
             this.cmdVolver = new System.Windows.Forms.Button();
@@ -44,7 +44,6 @@
             this.lblCantidadVentas = new System.Windows.Forms.Label();
             this.lblNombreVentas = new System.Windows.Forms.Label();
             this.lblIDVentas = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvConsultarVentas = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,12 +56,12 @@
             this.optCantidad = new System.Windows.Forms.RadioButton();
             this.mrcCargaDeVentas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadventas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // mrcCargaDeVentas
             // 
+            this.mrcCargaDeVentas.BackColor = System.Drawing.Color.BurlyWood;
             this.mrcCargaDeVentas.Controls.Add(this.cmdCargarVentas);
             this.mrcCargaDeVentas.Controls.Add(this.cmdVolver);
             this.mrcCargaDeVentas.Controls.Add(this.dtpFechaVenta);
@@ -73,13 +72,12 @@
             this.mrcCargaDeVentas.Controls.Add(this.lblCantidadVentas);
             this.mrcCargaDeVentas.Controls.Add(this.lblNombreVentas);
             this.mrcCargaDeVentas.Controls.Add(this.lblIDVentas);
-            this.mrcCargaDeVentas.Controls.Add(this.pictureBox1);
             this.mrcCargaDeVentas.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcCargaDeVentas.Location = new System.Drawing.Point(0, 14);
+            this.mrcCargaDeVentas.Location = new System.Drawing.Point(3, 50);
             this.mrcCargaDeVentas.Margin = new System.Windows.Forms.Padding(5);
             this.mrcCargaDeVentas.Name = "mrcCargaDeVentas";
             this.mrcCargaDeVentas.Padding = new System.Windows.Forms.Padding(5);
-            this.mrcCargaDeVentas.Size = new System.Drawing.Size(394, 266);
+            this.mrcCargaDeVentas.Size = new System.Drawing.Size(406, 266);
             this.mrcCargaDeVentas.TabIndex = 0;
             this.mrcCargaDeVentas.TabStop = false;
             this.mrcCargaDeVentas.Text = "Carga De Ventas";
@@ -200,31 +198,20 @@
             this.lblIDVentas.Text = "ID del Producto";
             this.lblIDVentas.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(83, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(239, 178);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // dgvConsultarVentas
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvConsultarVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvConsultarVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsultarVentas.BackgroundColor = System.Drawing.Color.BurlyWood;
             this.dgvConsultarVentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvConsultarVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultarVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsultarVentas.ColumnHeadersHeight = 48;
             this.dgvConsultarVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvConsultarVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -233,24 +220,24 @@
             this.Cantidad,
             this.FechaVenta});
             this.dgvConsultarVentas.EnableHeadersVisualStyles = false;
-            this.dgvConsultarVentas.Location = new System.Drawing.Point(402, 50);
+            this.dgvConsultarVentas.Location = new System.Drawing.Point(417, 64);
             this.dgvConsultarVentas.Name = "dgvConsultarVentas";
             this.dgvConsultarVentas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvConsultarVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Tan;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvConsultarVentas.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvConsultarVentas.Size = new System.Drawing.Size(485, 244);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultarVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvConsultarVentas.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvConsultarVentas.Size = new System.Drawing.Size(482, 230);
             this.dgvConsultarVentas.TabIndex = 14;
             // 
             // ID
@@ -300,6 +287,7 @@
             this.cbVentas.Name = "cbVentas";
             this.cbVentas.Size = new System.Drawing.Size(340, 29);
             this.cbVentas.TabIndex = 19;
+            this.cbVentas.SelectedIndexChanged += new System.EventHandler(this.cbVentas_SelectedIndexChanged);
             // 
             // optProducto
             // 
@@ -327,7 +315,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 468);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(940, 407);
             this.Controls.Add(this.optCantidad);
             this.Controls.Add(this.optProducto);
             this.Controls.Add(this.cmdFiltrar);
@@ -345,7 +334,6 @@
             this.mrcCargaDeVentas.ResumeLayout(false);
             this.mrcCargaDeVentas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadventas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultarVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -365,7 +353,6 @@
         private System.Windows.Forms.TextBox txtNombreproductoVentas;
         private System.Windows.Forms.Button cmdCargarVentas;
         private System.Windows.Forms.Button cmdVolver;
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.DataGridView dgvConsultarVentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

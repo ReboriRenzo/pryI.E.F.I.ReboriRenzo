@@ -56,5 +56,10 @@ namespace pryI.E.F.I.ReboriRenzo
         {
             this.Close();
         }
+
+        private void lblContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

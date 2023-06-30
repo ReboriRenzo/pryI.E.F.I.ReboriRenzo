@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace pryI.E.F.I.ReboriRenzo
 {
@@ -30,10 +31,10 @@ namespace pryI.E.F.I.ReboriRenzo
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistro));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistro));
             this.mrcRegistro = new System.Windows.Forms.GroupBox();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
@@ -45,15 +46,14 @@ namespace pryI.E.F.I.ReboriRenzo
             this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbProductos = new System.Windows.Forms.ComboBox();
             this.mrcRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +70,6 @@ namespace pryI.E.F.I.ReboriRenzo
             this.mrcRegistro.Controls.Add(this.lblFechaRegistro);
             this.mrcRegistro.Controls.Add(this.txtID);
             this.mrcRegistro.Controls.Add(this.txtNombre);
-            this.mrcRegistro.Controls.Add(this.pictureBox1);
             this.mrcRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcRegistro.Location = new System.Drawing.Point(12, 12);
             this.mrcRegistro.Name = "mrcRegistro";
@@ -94,7 +93,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // nudCantidad
             // 
-            this.nudCantidad.BackColor = System.Drawing.Color.DarkGray;
+            this.nudCantidad.BackColor = System.Drawing.Color.AntiqueWhite;
             this.nudCantidad.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudCantidad.Location = new System.Drawing.Point(89, 126);
             this.nudCantidad.Name = "nudCantidad";
@@ -106,7 +105,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cmdVolver.BackColor = System.Drawing.Color.Tan;
             this.cmdVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdVolver.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdVolver.Location = new System.Drawing.Point(111, 226);
+            this.cmdVolver.Location = new System.Drawing.Point(10, 226);
             this.cmdVolver.Name = "cmdVolver";
             this.cmdVolver.Size = new System.Drawing.Size(95, 36);
             this.cmdVolver.TabIndex = 12;
@@ -125,14 +124,16 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // dtpFecha
             // 
+            this.dtpFecha.CalendarMonthBackground = System.Drawing.Color.AntiqueWhite;
             this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(3, 192);
+            this.dtpFecha.Location = new System.Drawing.Point(43, 192);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(304, 28);
+            this.dtpFecha.Size = new System.Drawing.Size(232, 28);
             this.dtpFecha.TabIndex = 7;
             // 
             // lblID
             // 
+
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(6, 26);
@@ -163,7 +164,7 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // txtID
             // 
-            this.txtID.BackColor = System.Drawing.Color.DarkGray;
+            this.txtID.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(134, 19);
@@ -173,24 +174,13 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNombre.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(94, 70);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(213, 28);
             this.txtNombre.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(37, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 218);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // dgvRegistro
             // 
@@ -221,7 +211,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.dgvRegistro.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvRegistro.EnableHeadersVisualStyles = false;
             this.dgvRegistro.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvRegistro.Location = new System.Drawing.Point(349, 21);
+            this.dgvRegistro.Location = new System.Drawing.Point(349, 12);
             this.dgvRegistro.Name = "dgvRegistro";
             this.dgvRegistro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -256,12 +246,24 @@ namespace pryI.E.F.I.ReboriRenzo
             this.Fecha.HeaderText = "Fecha que Caduca";
             this.Fecha.Name = "Fecha";
             // 
+            // cbProductos
+            // 
+            this.cbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProductos.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProductos.FormattingEnabled = true;
+            this.cbProductos.Location = new System.Drawing.Point(365, 246);
+            this.cbProductos.Name = "cbProductos";
+            this.cbProductos.Size = new System.Drawing.Size(252, 24);
+            this.cbProductos.TabIndex = 17;
+            this.cbProductos.SelectedIndexChanged += new System.EventHandler(this.cbProductos_SelectedIndexChanged);
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(858, 290);
+            this.Controls.Add(this.cbProductos);
             this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.mrcRegistro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -271,10 +273,15 @@ namespace pryI.E.F.I.ReboriRenzo
             this.mrcRegistro.ResumeLayout(false);
             this.mrcRegistro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void cbProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
         }
 
 
@@ -291,11 +298,11 @@ namespace pryI.E.F.I.ReboriRenzo
         private System.Windows.Forms.Label lblFechaRegistro;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.DataGridView dgvRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.ComboBox cbProductos;
     }
 }

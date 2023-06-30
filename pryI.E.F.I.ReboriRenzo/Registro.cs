@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.ListView;
 
 namespace pryI.E.F.I.ReboriRenzo
 {
     public partial class frmRegistro : Form
 
     {
+        
+        List<Producto> listaProductos = new List<Producto>();
         readonly int indiceRegistro = 0;
         int indiceFilaRegistro;
         public frmRegistro()
@@ -71,12 +74,18 @@ namespace pryI.E.F.I.ReboriRenzo
                             dgvRegistro.Rows[n].Cells[2].Value = nudCantidad.Value.ToString();
                             dgvRegistro.Rows[n].Cells[3].Value = dtpFecha.Value.ToString();
 
-
-
-
                         }
                         else
                         {
+                            Producto nuevoProducto = new Producto();
+                            nuevoProducto.ID = (listaProductos.Count + 1);
+                            nuevoProducto.Nombre = txtNombre.Text;
+                            nuevoProducto.FechaRegistro = dtpFecha.Value;
+                            listaProductos.Add(nuevoProducto);
+                            cbProductos.DataSource = null;
+                            cbProductos.DataSource = listaProductos;
+                            cbProductos.DisplayMember = "Nombre";
+                            txtNombre.Focus();
                             MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }

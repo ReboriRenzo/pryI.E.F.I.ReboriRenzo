@@ -145,5 +145,10 @@ namespace pryI.E.F.I.ReboriRenzo
             cbVentas.DataSource = filtro;
             cbVentas.DisplayMember = "Producto";
             }
+
+        private void cbVentas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
