@@ -15,6 +15,7 @@ namespace pryI.E.F.I.ReboriRenzo
         List<Ventas> listaVentas = new List<Ventas> ();
         public frmCargarVentas()
         {
+
             InitializeComponent();
         }
 
