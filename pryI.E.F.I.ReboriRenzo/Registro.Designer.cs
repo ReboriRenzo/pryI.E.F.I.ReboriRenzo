@@ -133,7 +133,6 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // lblID
             // 
-
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(6, 26);
@@ -251,9 +250,9 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbProductos.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProductos.FormattingEnabled = true;
-            this.cbProductos.Location = new System.Drawing.Point(365, 246);
+            this.cbProductos.Location = new System.Drawing.Point(459, 246);
             this.cbProductos.Name = "cbProductos";
-            this.cbProductos.Size = new System.Drawing.Size(252, 24);
+            this.cbProductos.Size = new System.Drawing.Size(296, 24);
             this.cbProductos.TabIndex = 17;
             this.cbProductos.SelectedIndexChanged += new System.EventHandler(this.cbProductos_SelectedIndexChanged);
             // 

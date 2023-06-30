@@ -12,3 +12,4 @@ C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.pdb
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmRegistro.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargarVentas.resources
+C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmListado.resources
