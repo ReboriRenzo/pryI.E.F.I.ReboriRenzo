@@ -239,6 +239,7 @@
             this.dgvConsultarVentas.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvConsultarVentas.Size = new System.Drawing.Size(482, 230);
             this.dgvConsultarVentas.TabIndex = 14;
+            this.dgvConsultarVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultarVentas_CellContentClick_1);
             // 
             // ID
             // 
@@ -262,28 +263,31 @@
             // 
             // cmdFiltrar
             // 
+            this.cmdFiltrar.BackColor = System.Drawing.Color.Tan;
             this.cmdFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdFiltrar.Location = new System.Drawing.Point(534, 362);
+            this.cmdFiltrar.Location = new System.Drawing.Point(691, 300);
             this.cmdFiltrar.Name = "cmdFiltrar";
-            this.cmdFiltrar.Size = new System.Drawing.Size(229, 30);
+            this.cmdFiltrar.Size = new System.Drawing.Size(134, 28);
             this.cmdFiltrar.TabIndex = 14;
             this.cmdFiltrar.Text = "Filtrar";
-            this.cmdFiltrar.UseVisualStyleBackColor = true;
+            this.cmdFiltrar.UseVisualStyleBackColor = false;
             this.cmdFiltrar.Click += new System.EventHandler(this.cmdFiltrar_Click);
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(534, 327);
+            this.txtBusqueda.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(429, 300);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(229, 33);
+            this.txtBusqueda.Size = new System.Drawing.Size(245, 28);
             this.txtBusqueda.TabIndex = 14;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
             // cbVentas
             // 
             this.cbVentas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVentas.FormattingEnabled = true;
-            this.cbVentas.Location = new System.Drawing.Point(432, 15);
+            this.cbVentas.Location = new System.Drawing.Point(462, 29);
             this.cbVentas.Name = "cbVentas";
             this.cbVentas.Size = new System.Drawing.Size(340, 29);
             this.cbVentas.TabIndex = 19;
@@ -293,20 +297,23 @@
             // 
             this.optProducto.AutoSize = true;
             this.optProducto.Checked = true;
-            this.optProducto.Location = new System.Drawing.Point(552, 300);
+            this.optProducto.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optProducto.Location = new System.Drawing.Point(674, 334);
             this.optProducto.Name = "optProducto";
-            this.optProducto.Size = new System.Drawing.Size(95, 25);
+            this.optProducto.Size = new System.Drawing.Size(82, 21);
             this.optProducto.TabIndex = 20;
             this.optProducto.TabStop = true;
             this.optProducto.Text = "Producto";
             this.optProducto.UseVisualStyleBackColor = true;
+            this.optProducto.CheckedChanged += new System.EventHandler(this.optProducto_CheckedChanged);
             // 
             // optCantidad
             // 
             this.optCantidad.AutoSize = true;
-            this.optCantidad.Location = new System.Drawing.Point(669, 300);
+            this.optCantidad.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optCantidad.Location = new System.Drawing.Point(762, 334);
             this.optCantidad.Name = "optCantidad";
-            this.optCantidad.Size = new System.Drawing.Size(94, 25);
+            this.optCantidad.Size = new System.Drawing.Size(81, 21);
             this.optCantidad.TabIndex = 21;
             this.optCantidad.Text = "Cantidad";
             this.optCantidad.UseVisualStyleBackColor = true;
@@ -316,7 +323,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(940, 407);
+            this.ClientSize = new System.Drawing.Size(940, 370);
             this.Controls.Add(this.optCantidad);
             this.Controls.Add(this.optProducto);
             this.Controls.Add(this.cmdFiltrar);

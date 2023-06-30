@@ -13,3 +13,17 @@ C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmRegistro.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargarVentas.resources
 C:\Users\Usuario\source\repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmListado.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\bin\Debug\pryI.E.F.I.ReboriRenzo.exe.config
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\bin\Debug\pryI.E.F.I.ReboriRenzo.exe
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\bin\Debug\pryI.E.F.I.ReboriRenzo.pdb
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.csproj.AssemblyReference.cache
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmBienvenido.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmCargarVentas.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmInicioSesion.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.Properties.Resources.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.frmRegistro.resources
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.csproj.GenerateResource.cache
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.csproj.CoreCompileInputs.cache
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.exe
+C:\Users\Alumnos\Source\Repos\pryI.E.F.I.ReboriRenzo\pryI.E.F.I.ReboriRenzo\obj\Debug\pryI.E.F.I.ReboriRenzo.pdb

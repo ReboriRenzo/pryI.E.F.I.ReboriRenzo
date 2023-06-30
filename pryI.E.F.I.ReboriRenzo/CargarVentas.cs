@@ -150,5 +150,20 @@ namespace pryI.E.F.I.ReboriRenzo
         {
 
         }
+
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvConsultarVentas_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void optProducto_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

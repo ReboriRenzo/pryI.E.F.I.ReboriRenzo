@@ -14,7 +14,7 @@ namespace pryI.E.F.I.ReboriRenzo
     public partial class frmRegistro : Form
 
     {
-        
+        Producto nuevoProducto = new Producto();
         List<Producto> listaProductos = new List<Producto>();
         readonly int indiceRegistro = 0;
         int indiceFilaRegistro;
@@ -69,23 +69,32 @@ namespace pryI.E.F.I.ReboriRenzo
 
                             int n = dgvRegistro.Rows.Add();
 
+                            Producto nuevoProducto = new Producto();
+
+
                             dgvRegistro.Rows[n].Cells[0].Value = txtID.Text;
                             dgvRegistro.Rows[n].Cells[1].Value = txtNombre.Text;
                             dgvRegistro.Rows[n].Cells[2].Value = nudCantidad.Value.ToString();
                             dgvRegistro.Rows[n].Cells[3].Value = dtpFecha.Value.ToString();
-
-                        }
-                        else
-                        {
-                            Producto nuevoProducto = new Producto();
+                           
                             nuevoProducto.ID = (listaProductos.Count + 1);
                             nuevoProducto.Nombre = txtNombre.Text;
+                            nuevoProducto.Cantidad = int.Parse(nudCantidad.Text);
                             nuevoProducto.FechaRegistro = dtpFecha.Value;
+
+                            
+
                             listaProductos.Add(nuevoProducto);
                             cbProductos.DataSource = null;
                             cbProductos.DataSource = listaProductos;
                             cbProductos.DisplayMember = "Nombre";
                             txtNombre.Focus();
+                        }
+                        else
+                        {
+                            
+
+
                             MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
@@ -103,6 +112,38 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 MessageBox.Show("ID del producto inexistente", "ERROR EN EL ID", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
+        }
+
+        private void filtrarProducto()
+        {
+            List<Producto> filtro = new List<Producto>();
+            for (int i = 0; i < listaProductos.Count; i++)
+            {
+                if (listaProductos[i].Productos == txtFiltro.Text) filtro.Add(listaProductos[i]);
+            }
+            cbProductos.DataSource = filtro;
+            cbProductos.DisplayMember = "Producto";
+        }
+
+        private void filtrarCantidad()
+        {
+            List<Producto> filtro = new List<Producto>();
+            for (int i = 0; i < listaProductos.Count; i++)
+            {
+                if (listaProductos[i].Cantidad > int.Parse(txtFiltro.Text))
+                {
+                    filtro.Add(listaProductos[i]);
+                }
+            }
+            cbProductos.DataSource = filtro;
+            cbProductos.DisplayMember = "Producto";
+        }
+
+        private void cmdFiltrar_Click(object sender, EventArgs e)
+        {
+            if (optCantidad.Checked) filtrarCantidad();
+
+            else filtrarProducto();
         }
     }
 }

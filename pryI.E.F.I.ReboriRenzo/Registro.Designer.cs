@@ -52,6 +52,10 @@ namespace pryI.E.F.I.ReboriRenzo
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbProductos = new System.Windows.Forms.ComboBox();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.cmdFiltrar = new System.Windows.Forms.Button();
+            this.optProducto = new System.Windows.Forms.RadioButton();
+            this.optCantidad = new System.Windows.Forms.RadioButton();
             this.mrcRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
@@ -247,21 +251,71 @@ namespace pryI.E.F.I.ReboriRenzo
             // 
             // cbProductos
             // 
+            this.cbProductos.BackColor = System.Drawing.Color.Tan;
             this.cbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbProductos.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProductos.FormattingEnabled = true;
-            this.cbProductos.Location = new System.Drawing.Point(459, 246);
+            this.cbProductos.Location = new System.Drawing.Point(349, 280);
             this.cbProductos.Name = "cbProductos";
             this.cbProductos.Size = new System.Drawing.Size(296, 24);
             this.cbProductos.TabIndex = 17;
             this.cbProductos.SelectedIndexChanged += new System.EventHandler(this.cbProductos_SelectedIndexChanged);
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.BackColor = System.Drawing.Color.Tan;
+            this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFiltro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltro.Location = new System.Drawing.Point(349, 246);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(296, 28);
+            this.txtFiltro.TabIndex = 14;
+            // 
+            // cmdFiltrar
+            // 
+            this.cmdFiltrar.BackColor = System.Drawing.Color.Tan;
+            this.cmdFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdFiltrar.Location = new System.Drawing.Point(662, 246);
+            this.cmdFiltrar.Name = "cmdFiltrar";
+            this.cmdFiltrar.Size = new System.Drawing.Size(96, 28);
+            this.cmdFiltrar.TabIndex = 18;
+            this.cmdFiltrar.Text = "Filtrar";
+            this.cmdFiltrar.UseVisualStyleBackColor = false;
+            this.cmdFiltrar.Click += new System.EventHandler(this.cmdFiltrar_Click);
+            // 
+            // optProducto
+            // 
+            this.optProducto.AutoSize = true;
+            this.optProducto.Checked = true;
+            this.optProducto.Location = new System.Drawing.Point(662, 287);
+            this.optProducto.Name = "optProducto";
+            this.optProducto.Size = new System.Drawing.Size(68, 17);
+            this.optProducto.TabIndex = 21;
+            this.optProducto.TabStop = true;
+            this.optProducto.Text = "Producto";
+            this.optProducto.UseVisualStyleBackColor = true;
+            // 
+            // optCantidad
+            // 
+            this.optCantidad.AutoSize = true;
+            this.optCantidad.Location = new System.Drawing.Point(736, 287);
+            this.optCantidad.Name = "optCantidad";
+            this.optCantidad.Size = new System.Drawing.Size(67, 17);
+            this.optCantidad.TabIndex = 22;
+            this.optCantidad.Text = "Cantidad";
+            this.optCantidad.UseVisualStyleBackColor = true;
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(858, 290);
+            this.ClientSize = new System.Drawing.Size(858, 314);
+            this.Controls.Add(this.optCantidad);
+            this.Controls.Add(this.optProducto);
+            this.Controls.Add(this.cmdFiltrar);
+            this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.cbProductos);
             this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.mrcRegistro);
@@ -274,6 +328,7 @@ namespace pryI.E.F.I.ReboriRenzo
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -303,5 +358,9 @@ namespace pryI.E.F.I.ReboriRenzo
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.ComboBox cbProductos;
+        private TextBox txtFiltro;
+        private Button cmdFiltrar;
+        private RadioButton optProducto;
+        private RadioButton optCantidad;
     }
 }
