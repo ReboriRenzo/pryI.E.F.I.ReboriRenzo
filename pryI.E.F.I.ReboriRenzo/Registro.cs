@@ -69,21 +69,24 @@ namespace pryI.E.F.I.ReboriRenzo
 
                             int n = dgvRegistro.Rows.Add();
 
+
+                            //Variable Ventas como nueva variable para cargar datos como objetos
                             Producto nuevoProducto = new Producto();
 
-
+                            //Enviar los datos a la Grilla
                             dgvRegistro.Rows[n].Cells[0].Value = txtID.Text;
                             dgvRegistro.Rows[n].Cells[1].Value = txtNombre.Text;
                             dgvRegistro.Rows[n].Cells[2].Value = nudCantidad.Value.ToString();
                             dgvRegistro.Rows[n].Cells[3].Value = dtpFecha.Value.ToString();
-                           
+
+                            //Nuevo Listado de los productos cargados
                             nuevoProducto.ID = (listaProductos.Count + 1);
                             nuevoProducto.Nombre = txtNombre.Text;
                             nuevoProducto.Cantidad = int.Parse(nudCantidad.Text);
                             nuevoProducto.FechaRegistro = dtpFecha.Value;
 
-                            
 
+                            //Agregar los datos cargados al Combo box
                             listaProductos.Add(nuevoProducto);
                             cbProductos.DataSource = null;
                             cbProductos.DataSource = listaProductos;
@@ -93,7 +96,7 @@ namespace pryI.E.F.I.ReboriRenzo
                         else
                         {
                             
-
+                            //Mensajes al no colocar bien los datos
 
                             MessageBox.Show("La Fecha tiene que ser al dia de hoy o posterior", "Determine una fecha valida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
@@ -114,6 +117,8 @@ namespace pryI.E.F.I.ReboriRenzo
             }
         }
 
+
+        //Filtrar los productos en la variable List<Productos> para filtrar Productos
         private void filtrarProducto()
         {
             List<Producto> filtro = new List<Producto>();
@@ -121,10 +126,12 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 if (listaProductos[i].Productos == txtFiltro.Text) filtro.Add(listaProductos[i]);
             }
+            //Origen y establece la propiedad  de estos datos para el filtro
             cbProductos.DataSource = filtro;
             cbProductos.DisplayMember = "Producto";
         }
 
+        //Filtrar cantidad en variable List<Productos> para filtrar cantidades
         private void filtrarCantidad()
         {
             List<Producto> filtro = new List<Producto>();
@@ -135,6 +142,8 @@ namespace pryI.E.F.I.ReboriRenzo
                     filtro.Add(listaProductos[i]);
                 }
             }
+
+            //Origen y establece la propiedad  de estos datos para el filtro
             cbProductos.DataSource = filtro;
             cbProductos.DisplayMember = "Producto";
         }

@@ -237,7 +237,7 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.AntiqueWhite;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvConsultarVentas.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvConsultarVentas.Size = new System.Drawing.Size(482, 230);
+            this.dgvConsultarVentas.Size = new System.Drawing.Size(444, 230);
             this.dgvConsultarVentas.TabIndex = 14;
             this.dgvConsultarVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultarVentas_CellContentClick_1);
             // 
@@ -276,6 +276,7 @@
             // 
             // txtBusqueda
             // 
+            this.txtBusqueda.BackColor = System.Drawing.Color.Tan;
             this.txtBusqueda.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBusqueda.Location = new System.Drawing.Point(429, 300);
             this.txtBusqueda.Name = "txtBusqueda";
@@ -323,7 +324,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(940, 370);
+            this.ClientSize = new System.Drawing.Size(870, 370);
             this.Controls.Add(this.optCantidad);
             this.Controls.Add(this.optProducto);
             this.Controls.Add(this.cmdFiltrar);

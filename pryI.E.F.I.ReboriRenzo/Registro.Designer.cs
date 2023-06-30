@@ -90,7 +90,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cmdRegistrar.Location = new System.Drawing.Point(212, 226);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 36);
-            this.cmdRegistrar.TabIndex = 13;
+            this.cmdRegistrar.TabIndex = 5;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = false;
             this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click_1);
@@ -102,7 +102,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.nudCantidad.Location = new System.Drawing.Point(89, 126);
             this.nudCantidad.Name = "nudCantidad";
             this.nudCantidad.Size = new System.Drawing.Size(218, 28);
-            this.nudCantidad.TabIndex = 13;
+            this.nudCantidad.TabIndex = 3;
             // 
             // cmdVolver
             // 
@@ -133,7 +133,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.dtpFecha.Location = new System.Drawing.Point(43, 192);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(232, 28);
-            this.dtpFecha.TabIndex = 7;
+            this.dtpFecha.TabIndex = 4;
             // 
             // lblID
             // 
@@ -173,7 +173,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.txtID.Location = new System.Drawing.Point(134, 19);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(173, 28);
-            this.txtID.TabIndex = 6;
+            this.txtID.TabIndex = 1;
             // 
             // txtNombre
             // 
@@ -183,7 +183,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.txtNombre.Location = new System.Drawing.Point(94, 70);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(213, 28);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.TabIndex = 2;
             // 
             // dgvRegistro
             // 
@@ -258,7 +258,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cbProductos.Location = new System.Drawing.Point(349, 280);
             this.cbProductos.Name = "cbProductos";
             this.cbProductos.Size = new System.Drawing.Size(296, 24);
-            this.cbProductos.TabIndex = 17;
+            this.cbProductos.TabIndex = 2;
             this.cbProductos.SelectedIndexChanged += new System.EventHandler(this.cbProductos_SelectedIndexChanged);
             // 
             // txtFiltro
@@ -269,7 +269,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.txtFiltro.Location = new System.Drawing.Point(349, 246);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(296, 28);
-            this.txtFiltro.TabIndex = 14;
+            this.txtFiltro.TabIndex = 0;
             // 
             // cmdFiltrar
             // 
@@ -279,7 +279,7 @@ namespace pryI.E.F.I.ReboriRenzo
             this.cmdFiltrar.Location = new System.Drawing.Point(662, 246);
             this.cmdFiltrar.Name = "cmdFiltrar";
             this.cmdFiltrar.Size = new System.Drawing.Size(96, 28);
-            this.cmdFiltrar.TabIndex = 18;
+            this.cmdFiltrar.TabIndex = 1;
             this.cmdFiltrar.Text = "Filtrar";
             this.cmdFiltrar.UseVisualStyleBackColor = false;
             this.cmdFiltrar.Click += new System.EventHandler(this.cmdFiltrar_Click);

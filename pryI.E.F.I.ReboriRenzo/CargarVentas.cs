@@ -12,6 +12,8 @@ namespace pryI.E.F.I.ReboriRenzo
 {
     public partial class frmCargarVentas : Form
     {
+        //Declaracion variables globales
+
         List<Ventas> listaVentas = new List<Ventas> ();
         public frmCargarVentas()
         {
@@ -41,19 +43,24 @@ namespace pryI.E.F.I.ReboriRenzo
                         {
                             MessageBox.Show("Haz cargado tus ventas correctamente", "Ventas Cargadas", MessageBoxButtons.OKCancel, MessageBoxIcon.None);
 
+                            //Variable Ventas como nueva variable para cargar datos como objetos
+
                             Ventas nuevaVenta = new Ventas();
 
+                            //Nuevo Listado de las ventas cargadas
                             nuevaVenta.ID = (listaVentas.Count + 1);
                             nuevaVenta.FechaVenta = dtpFechaVenta.Value;
                             nuevaVenta.Producto = txtNombreproductoVentas.Text;
                             nuevaVenta.Cantidad = int.Parse(nudCantidadventas.Text);
 
+                            //Agregar los datos al Combo box
                             listaVentas.Add(nuevaVenta);
                             cbVentas.DataSource = null;
                             cbVentas.DataSource = listaVentas;
                             cbVentas.DisplayMember = "Producto";
                             txtNombreproductoVentas.Focus();
 
+                            //Enviar los datos a la Grilla
                             int n = dgvConsultarVentas.Rows.Add();
 
                             dgvConsultarVentas.Rows[n].Cells[0].Value = txtIDVentas.Text;
@@ -118,12 +125,17 @@ namespace pryI.E.F.I.ReboriRenzo
             this.Close();
         }
 
+
+
+        //Filtrar la cantidad si el BOTON DE OPCION Cantidad esta chequeado
         private void cmdFiltrar_Click(object sender, EventArgs e)
         {
             if (optCantidad.Checked) filtrarCantidad();
 
             else filtrarProducto(); 
         }
+
+        //Filtrar los productos en la variable List<ventas> para filtrar Productos
 
         private void filtrarProducto()
         {
@@ -132,10 +144,13 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 if (listaVentas[i].Producto == txtBusqueda.Text) filtro.Add(listaVentas[i]);
             }
+        //Origen y establece la propiedad  de estos datos para el filtro
             cbVentas.DataSource = filtro;
             cbVentas.DisplayMember = "Producto";
         }
 
+
+        //FiltrarCantidad en variable List<ventas> para filtrar cantidades
         private void filtrarCantidad()
         {
             List<Ventas> filtro = new List<Ventas>();
@@ -143,6 +158,7 @@ namespace pryI.E.F.I.ReboriRenzo
             {
                 if (listaVentas[i].Cantidad > int.Parse(txtBusqueda.Text)) filtro.Add(listaVentas[i]);
             }
+            //Origen y establece la propiedad  de estos datos para el filtro
             cbVentas.DataSource = filtro;
             cbVentas.DisplayMember = "Producto";
             }
